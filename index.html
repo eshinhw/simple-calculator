@@ -9,34 +9,39 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
     <title>Simple Calculator</title>
   </head>
   <body>
+    <header><h1>Simple Calculator</h1></header>
     <main>
       <section class="display"><span id="value"></span></section>
       <section class="buttons">
-        <button class="reset-symbol" id="clear">C</button>
-        <button class="math-symbol" id="left-parenthesis">(</button>
-        <button class="math-symbol" id="right-parenthesis">)</button>
-        <button class="math-symbol" id="division">÷</button>
-        <button class="numbers">7</button>
-        <button class="numbers">8</button>
-        <button class="numbers">9</button>
-        <button class="math-symbol" id="multiply">×</button>
-        <button class="numbers">4</button>
-        <button class="numbers">5</button>
-        <button class="numbers">6</button>
-        <button class="math-symbol" id="minus">−</button>
-        <button class="numbers">1</button>
-        <button class="numbers">2</button>
-        <button class="numbers">3</button>
-        <button class="math-symbol" id="plus">+</button>
-        <button class="numbers">0</button>
-        <button id="dot">.</button>
-        <button class="math-symbol" id="percent">%</button>
-        <button class="math-symbol" id="equal">=</button>
+        <button data-clear class="span-two" id="clear-btn">AC</button>
+        <button data-del id="del-btn">DEL</button>
+        <button data-op class="math-symbol" id="divide-btn">÷</button>
+        <button data-number class="numbers">7</button>
+        <button data-number class="numbers">8</button>
+        <button data-number class="numbers">9</button>
+        <button data-op class="math-symbol" id="multiply-btn">×</button>
+        <button data-number class="numbers">4</button>
+        <button data-number class="numbers">5</button>
+        <button data-number class="numbers">6</button>
+        <button data-op class="math-symbol" id="subtract-btn">−</button>
+        <button data-number class="numbers">1</button>
+        <button data-number class="numbers">2</button>
+        <button data-number class="numbers">3</button>
+        <button data-op class="math-symbol" id="add-btn">+</button>
+        <button data-number class="numbers">0</button>
+        <button data-number>.</button>
+        <button data-op class="span-two" id="equal-btn">=</button>
       </section>
     </main>
-    <script src="script.js"></script>
   </body>
 </html>
